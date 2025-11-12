@@ -470,6 +470,11 @@
                 const resultDiv = document.getElementById('result');
                 resultDiv.style.display = 'block';
                 resultDiv.classList.add('glow-animation');
+
+                // Auto-refresh page after 1 minute for security
+                setTimeout(function() {
+                    window.location.reload();
+                }, 60000);
             } catch (error) {
                 document.getElementById('errorMsg').textContent = 'Decryption failed. Please check your password and try again.';
                 document.getElementById('errorMsg').style.display = 'block';
@@ -489,6 +494,14 @@
                     decryptContent();
                 }
             });
+        });
+
+        // Refresh page on blur if decrypted content is shown
+        window.addEventListener('blur', function() {
+            const resultDiv = document.getElementById('result');
+            if (resultDiv && resultDiv.style.display === 'block') {
+                window.location.reload();
+            }
         });
     </script>
 </body>
