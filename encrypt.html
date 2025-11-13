@@ -318,6 +318,10 @@
                 size: portrait;
             }
 
+            * {
+                color: black !important;
+            }
+
             .dont-print {
                 display: none;
             }
@@ -526,7 +530,7 @@
                         <div class="decrypt-js-code">
                             <h3>Emergency/alternative decryption code</h3>
                             <div class="code" onclick="navigator.clipboard.writeText(this.textContent).then(()=>{this.style.background='#4d4d4d'; setTimeout(()=>this.style.background='#2d2d2d', 200)})" title="Click to copy"><code>(async()=>{try{const p=prompt("Enter password:");if(!p)return;const c="${encryptedBase64.replace(/"/g, '\\"')}";const salt=new Uint8Array(16);const iv=new Uint8Array(16);const ciphertext=new Uint8Array(atob(c).split("").map(x=>x.charCodeAt(0)));const keyMaterial=await crypto.subtle.importKey("raw",new TextEncoder().encode(p),"PBKDF2",false,["deriveKey"]);const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:salt,iterations:100000,hash:"SHA-256"},keyMaterial,{name:"AES-CBC",length:128},false,["decrypt"]);const decrypted=await crypto.subtle.decrypt({name:"AES-CBC",iv:iv},key,ciphertext);alert(new TextDecoder().decode(decrypted))}catch(e){alert("Failed")}})()</code></div>
-                            <div style="margin-top:7px; font-size: 70%; color: #745530">Works offline, executable in browser console</div>
+                            <div style="margin-top:7px; font-size: 70%; color: #745530">Works offline, executable in browser console (open it via CMD+OPTION+I)</div>
                         </div>
                     </div>
                 </div>
