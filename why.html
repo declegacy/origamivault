@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why OrigamiVault? | Use Cases & Examples</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #d5b882 0%, #f1ebda 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 650px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(116, 85, 48, 0.2);
+            margin: 20px 0;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 120px;
+            height: auto;
+            margin: 0 auto 10px;
+        }
+
+        h1 {
+            color: #745530;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 27px;
+        }
+
+        h1 span {
+            background: linear-gradient(135deg, #745530 0%, #d5b882 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #745530;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        h3 {
+            color: #745530;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            color: #555;
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .use-case {
+            background: #f1ebda;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .use-case h3 {
+            margin-top: 0;
+        }
+
+        .example {
+            background: #fff;
+            border-left: 4px solid #d5b882;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .example strong {
+            color: #745530;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+            color: #745530;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 30px;
+            background: linear-gradient(135deg, #745530 0%, #d5b882 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+            margin: 5px;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #745530;
+        }
+
+        .footer a {
+            color: #745530;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="OrigamiVault Logo" class="logo">
+        </div>
+        <h1><span>OrigamiVault</span> - Why & How</h1>
+
+        <p>OrigamiVault provides a secure, offline way to store sensitive information on paper using encryption and QR codes. No cloud, no servers, no third parties.</p>
+
+        <h2>🔐 Common Use Cases</h2>
+
+        <div class="use-case">
+            <h3>1. Password Manager Master Passwords</h3>
+            <p><strong>Problem:</strong> Your LastPass, 1Password, or Bitwarden master password is the key to all your passwords. If you forget it, you lose everything.</p>
+
+            <div class="example">
+                <strong>Simple approach:</strong>
+                <ul>
+                    <li>Encrypt your master password with OrigamiVault</li>
+                    <li>Print the QR codes and store them in a drawer or safe</li>
+                    <li>Done! You have a secure backup that can't be hacked</li>
+                </ul>
+            </div>
+
+            <p><strong>Why paper is better:</strong> A paper password stored in your home can't be brute-forced or hacked remotely. No online attacker can reach it. The only threat is physical access to your home, which is much less likely than a remote attack. Even if someone finds the QR code, they still need your encryption password to decrypt it.</p>
+        </div>
+
+        <div class="use-case">
+            <h3>2. Cryptocurrency Private Keys & Seed Phrases</h3>
+            <p><strong>Problem:</strong> Bitcoin, Ethereum, and other crypto wallets require you to backup your seed phrase or private key. Losing it means losing your funds forever. Storing it digitally is risky.</p>
+
+            <div class="example">
+                <strong>Recommended approach:</strong>
+                <ul>
+                    <li>Store your 12/24-word seed phrase encrypted with OrigamiVault</li>
+                    <li><strong>Alternative:</strong> Write first 8 words on paper, encrypt remaining 4 words</li>
+                    <li>Use a memorable password (different from wallet password!)</li>
+                    <li>Store paper copy in a fireproof safe or safe deposit box</li>
+                    <li>Consider making 2-3 copies in different locations</li>
+                </ul>
+            </div>
+
+            <p><strong>Example:</strong> Your seed is <code>abandon ability able about above absent absorb abstract absurd abuse access accident</code>. Write the first 8 words on paper, encrypt the last 4 with OrigamiVault.</p>
+        </div>
+
+        <div class="use-case">
+            <h3>3. Recovery Codes & 2FA Backup Codes</h3>
+            <p><strong>Problem:</strong> Services give you one-time recovery codes for 2FA. You need to store them securely but accessibly.</p>
+
+            <div class="example">
+                <strong>What to encrypt:</strong>
+                <ul>
+                    <li>Google/Microsoft account recovery codes</li>
+                    <li>GitHub recovery codes</li>
+                    <li>Banking 2FA backup codes</li>
+                    <li>TOTP secret keys (for authenticator apps)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="use-case">
+            <h3>4. Emergency Access & Digital Inheritance</h3>
+            <p><strong>Use case:</strong> Important information that should only be accessed in emergencies or after your death (medical info, account credentials, cryptocurrency wallets, digital assets).</p>
+
+            <div class="example">
+                <strong>Split-trust approach (recommended):</strong>
+                <ul>
+                    <li><strong>Give encrypted QR codes to your father</strong> (stored in a safe place)</li>
+                    <li><strong>Give the password to a trusted friend</strong> (memorized or written separately)</li>
+                    <li><strong>Inform your friend:</strong> "Contact my father in case of emergency"</li>
+                </ul>
+
+                <p><strong>Why this works:</strong> Neither person can access your information alone. Your father has the encrypted data but no password. Your friend has the password but no encrypted data. Only in a genuine emergency will they work together to decrypt it.</p>
+            </div>
+
+            <div class="example">
+                <strong>What to store for emergencies:</strong>
+                <ul>
+                    <li>Cryptocurrency wallet seed phrases</li>
+                    <li>Password manager master passwords</li>
+                    <li>Bank account information and safe combinations</li>
+                    <li>Medical conditions and important health information</li>
+                    <li>Instructions for digital asset inheritance</li>
+                    <li>Business continuity information</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>🛡️ Security Best Practices</h2>
+
+        <ul>
+            <li><strong>Never store the password with the QR code:</strong> Keep them in different locations</li>
+            <li><strong>Use offline mode:</strong> Turn off internet when encrypting/decrypting</li>
+            <li><strong>Use incognito/private browser:</strong> Prevents password managers from saving data</li>
+            <li><strong>Make multiple copies:</strong> Store in 2-3 different secure locations</li>
+            <li><strong>Test your backups:</strong> Periodically verify you can decrypt your data</li>
+            <li><strong>Consider physical security:</strong> Fireproof safe, safe deposit box, locked drawer</li>
+        </ul>
+
+        <h2>💡 Why Split Sensitive Information?</h2>
+
+        <p>For maximum security, split your sensitive data into two parts:</p>
+
+        <div class="example">
+            <strong>Example with Bitcoin seed phrase:</strong>
+            <ul>
+                <li><strong>Part 1 (plaintext):</strong> First 8 words written on paper</li>
+                <li><strong>Part 2 (encrypted):</strong> Last 4 words encrypted with OrigamiVault</li>
+            </ul>
+
+            <p>This provides defense in depth: someone needs BOTH pieces to access your funds. If they find just the paper, they can't complete the seed. If they find just the QR code, they can't decrypt it without the password.</p>
+        </div>
+
+        <h2>🚀 Getting Started</h2>
+
+        <p>Ready to secure your sensitive information? Start encrypting now, or learn more about how OrigamiVault works.</p>
+
+        <div class="cta">
+            <a href="encrypt.html" class="button">Start Encrypting</a>
+            <a href="decrypt.html" class="button">Decrypt Content</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/declegacy/origamivault" target="_blank">OrigamiVault</a> is an open source project
+    </div>
+</body>
+</html>
