@@ -1,5 +1,6 @@
 # OrigamiVault — Encrypted Paper Storage
 
+
 **Offline. Secure. Printable. Recoverable.**
 
 OrigamiVault is a tiny web app for encrypting sensitive data and storing it on paper using QR codes or OCR-friendly printed code.
